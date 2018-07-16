@@ -23,4 +23,4 @@ FOR RUN: You must do config in application.proferties file.(for Database, I used
         "userAddress" : "İstanbul"
     }
 6. you click send button in postman.
-7. you check inbox.
+7. you check inbox for userEmail.

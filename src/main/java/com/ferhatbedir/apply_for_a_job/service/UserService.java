@@ -61,7 +61,7 @@ public class UserService {
                 "\n" +
                 "\nBaşarılar.");
 
-        FileSystemResource file = new FileSystemResource(new File("C:\\Users\\ferhat\\Desktop\\jobapplicationfrom\\picture\\tmod.jpg"));
+        FileSystemResource file = new FileSystemResource(new File("C:\\Users\\ferhat\\Desktop\\apply_for_a_job\\picture\\Attachment.jpg"));
         helper.addAttachment("Attachment", file);
 
         javaMailSender.send(message);

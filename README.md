@@ -9,9 +9,9 @@ FOR RUN: You must do config in application.proferties file.(for Database, I used
 
 1. Run App.
 2. Run Postman.
-3. You select Post.
+3. You select type POST.
 4. You enter address http://localhost:8080/applytojob.
-5. You enter post body.
+5. You must enter post body.
   for example;
     {
         "userFirstName" : "Name",
@@ -22,5 +22,5 @@ FOR RUN: You must do config in application.proferties file.(for Database, I used
         "userUniversity" : "İstanbul Üniversitesi",
         "userAddress" : "İstanbul"
     }
-6. you click send button in postman.
+6. you click send button in Postman.
 7. you check inbox for userEmail.

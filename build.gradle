@@ -1,0 +1,34 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.ferhatbedir'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.data:spring-data-mongodb:2.0.8.RELEASE')
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.5.14.RELEASE'
+	compile('org.springframework.boot:spring-boot-starter')
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
